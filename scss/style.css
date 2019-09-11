@@ -10653,25 +10653,39 @@ a.ShermanLink {
   z-index: 10;
 }
 
-#faux-terminal {
-  z-index: -100;
-  position: relative;
-  background-color: black;
-  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
-  margin-top: -4rem;
-  height: 20rem;
-  width: 28rem;
+@media (min-width: 500px) and (max-width: 4000px) {
+  #faux-terminal {
+    z-index: -100;
+    position: relative;
+    background-color: black;
+    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+    margin-top: -4rem;
+    height: 20rem;
+    width: 28rem;
+  }
 }
 
 .SSTRComp {
-  font-family: 'Source Code Pro', sans-serif;
-  color: #ffffff;
+  color: white;
+  font-family: 'Inconsolata', monospace;
   font-size: 1rem;
+  text-shadow: 0 0 5px #C8C8C8;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.SSTRComp::after {
+  content: "";
+  position: absolute;
+  margin-top: -2rem;
+  top: 0;
+  left: 0;
+  width: 28rem;
+  height: 20rem;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 3px, transparent 2px);
 }
 
 h1 {
