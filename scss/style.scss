@@ -124,52 +124,6 @@ a.ShermanLink {
     color: #608007;
 }
 
-#comp {
-    position: relative;
-    z-index: 10;
-}
-
-#faux-terminal {
-    @media (min-width: 500px) and (max-width: 4000px){ 
-    z-index: -100;
-    position: relative;
-    background-color: black;
-    background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%);
-    margin-top: -4rem;
-    height: 20rem;
-    width: 28rem;
-    }
-}
-
-.SSTRComp {
-    color: white;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1rem;
-    text-shadow: 0 0 5px #C8C8C8;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    &::after {
-    content: "";
-    position: absolute;
-    margin-top: -2rem;
-    top: 0;
-    left: 0;
-    width: 28rem;
-    height: 20rem;
-    background: repeating-linear-gradient(
-    0deg,
-    rgba(black, 0.15),
-    rgba(black, 0.15) 1px,
-    transparent 3px,
-    transparent 2px
-    );
-}
-}
-
 h1 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5rem;
@@ -203,6 +157,12 @@ h4 {
 #newlogo{
     margin-top: 2rem;
 }
+
+///////terminal
+
+
+
+///////end terminal
 
 .featuresText {
     font-family: 'Nunito Sans', sans-serif;
