@@ -149,6 +149,11 @@ h4 {
 }
 
 ///////terminal
+#SSTRComp {
+    z-index: 2;
+    position: relative;
+}
+
 @keyframes flicker {
   0% {
     opacity: 0.552;
@@ -279,6 +284,21 @@ h4 {
       text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
   }
+  
+  .crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+
   .crt::after {
     content: " ";
     display: block;
@@ -293,26 +313,23 @@ h4 {
     pointer-events: none;
     animation: flicker 0.15s infinite;
   }
-  .crt::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-    z-index: 2;
-    background-size: 100% 2px, 3px 100%;
-    pointer-events: none;
-  }
+
+  
   .crt {
+    width: 80%;
+    padding-bottom: 60%;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #00B8D8;
     font-family: 'Inconsolata', Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #ffffff;
     animation: textShadow 10.6s infinite;
   }
-
+ 
 ///////end terminal
 
 .featuresText {
