@@ -10992,6 +10992,12 @@ h4 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #00B8D8;
+}
+
+.CompText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   font-family: 'Inconsolata', Arial, sans-serif;
   font-size: 1.3rem;
   color: #ffffff;
