@@ -10996,13 +10996,6 @@ h4 {
 
 .CompText {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  font-family: 'Inconsolata', Arial, sans-serif;
-  font-size: 1.3rem;
-  color: #ffffff;
-  -webkit-animation: textShadow 10.6s infinite;
-          animation: textShadow 10.6s infinite;
 }
 
 .featuresText {
