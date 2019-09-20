@@ -10992,10 +10992,10 @@ h4 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #00B8D8;
-}
-
-.CompText {
-  position: absolute;
+  background-image: url(https://www.dabsterent.com/images/SSTRDiscord.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 300px 100px;
 }
 
 .featuresText {
